@@ -98,9 +98,10 @@
   background: $darkGrey;
   color: rgba(255, 255, 255, 0.6);
 
-    &::placeholder {
+  &::placeholder {
     background: $darkGrey;
     color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer__button {
@@ -120,22 +121,23 @@
   color: white;
 
   &::after {
-  content: "";
+    content: "";
 
-  display: block;
-  transition: background-color $timeDelay $cubic;
+    display: block;
+    transition: background-color $timeDelay $cubic;
 
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
 
-  background-image: url("../images/send.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-}
+    background-image: url("../images/send.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
 
-  &:hover, &:focus {
-  background-color: $blueButton;
-}
+  &:hover,
+  &:focus {
+    background-color: $blueButton;
+  }
 }
