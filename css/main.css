@@ -5,7 +5,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px / 14px;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #757575;
   background-color: white;
@@ -90,29 +90,8 @@ p {
   text-align: center;
   font-weight: bold;
   font-size: 36px;
-  line-height: 40px / 36px;
+  line-height: 1.1111111111;
   color: #212121;
-}
-
-.logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px / 26px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-
-.logo__header--dark {
-  color: black;
-}
-
-.footer__logo {
-  color: white;
-  padding: 0;
 }
 
 /* хэдэр */
@@ -147,7 +126,7 @@ p {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px / 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -160,10 +139,9 @@ p {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px / 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
 }
-
 .header__point:not(:last-child) {
   margin-right: 30px;
 }
@@ -180,9 +158,7 @@ p {
   fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header__link--icon:hover .header__icon,
-.header__link--icon:focus .header__icon {
+.header__link--icon:hover .header__icon, .header__link--icon:focus .header__icon {
   fill: #2196f3;
 }
 
@@ -195,7 +171,6 @@ p {
 .link--current {
   color: #2196f3;
 }
-
 .link--current::after {
   content: "";
   position: absolute;
@@ -248,7 +223,7 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 24px / 14px;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: white;
@@ -279,7 +254,6 @@ p {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__link--icon:hover, .footer__link--icon:focus {
   background-color: #2196f3;
 }
@@ -307,12 +281,11 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px / 16px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   background: #2f303a;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer__input::placeholder {
   background: #2f303a;
   color: rgba(255, 255, 255, 0.6);
@@ -330,12 +303,11 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px / 16px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   text-align: center;
   color: white;
 }
-
 .footer__button::after {
   content: "";
   display: block;
@@ -348,10 +320,33 @@ p {
   background-size: auto;
   background-position: center;
 }
-
-.footer__button:hover,
-.footer__button:focus {
+.footer__button:hover, .footer__button:focus {
   background-color: #188ce8;
+}
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.1923076923;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.logo__header--dark {
+  color: black;
+}
+
+.footer__logo {
+  color: #2196f3;
+  padding: 0;
+}
+
+.footer__logo--light {
+  color: white;
 }
 
 /* Оформление Баннера  */
@@ -376,7 +371,7 @@ p {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px / 44px;
+  line-height: 1.3636363636;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: white;
@@ -386,22 +381,21 @@ p {
 .banner__button {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 50px;
   margin: 30px auto 0;
   padding: 10px 32px;
   font-family: "Roboto", sans-serif, arial;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px / 16px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: white;
   background-color: #2196f3;
   border-radius: 4px;
   border: transparent;
 }
-
-.banner__button:hover,
-.banner__button:focus {
+.banner__button:hover, .banner__button:focus {
   background-color: #188ce8;
 }
 
@@ -430,7 +424,7 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 24px / 14px;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
@@ -455,9 +449,9 @@ p {
 
 .wedoing__text-image {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 24px / 14px;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
@@ -485,7 +479,7 @@ p {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px / 16px;
+  line-height: 1.1875;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -496,7 +490,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px / 16px;
+  line-height: 1.1875;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -523,9 +517,7 @@ p {
   height: 44px;
   border-radius: 50%;
 }
-
-.team__icon-link:hover,
-.team__icon-link:focus {
+.team__icon-link:hover, .team__icon-link:focus {
   background-color: #2196f3;
 }
 
@@ -533,14 +525,10 @@ p {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team__icon--sl:focus,
-.team__icon--sl:hover {
+.team__icon--sl:focus, .team__icon--sl:hover {
   fill: white;
 }
-
-.team__icon-link:hover .team__icon--sl,
-.team__icon-link:focus .team__icon--sl {
+.team__icon-link:hover .team__icon--sl, .team__icon-link:focus .team__icon--sl {
   fill: white;
 }
 
@@ -567,18 +555,15 @@ p {
   border-radius: 4px;
   color: #afb1b8;
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: #2196f3;
 }
 
 .clients__icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
+.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
   fill: #2196f3;
 }
 
@@ -608,14 +593,11 @@ p {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px / 16px;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   color: #212121;
 }
-
-.filtrs__link:active,
-.filtrs__link:focus,
-.filtrs__link:hover {
+.filtrs__link:active, .filtrs__link:focus, .filtrs__link:hover {
   background-color: #2196f3;
   color: white;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -623,16 +605,18 @@ p {
 
 /* Портфолио список  */
 .portfolio__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .portfolio__point {
-  margin-right: 30px;
-  margin-bottom: 30px;
   width: 370px;
   background-color: white;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__point:hover, .portfolio__point:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio__img--overlay {
@@ -654,40 +638,25 @@ p {
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
 }
+.portfolio__point:hover .portfolio__overlay, .portfolio__point:focus .portfolio__overlay {
+  transform: translateY(0%);
+  opacity: 1;
+}
 
 .portfolio__text--overlay {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px / 18px;
+  line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: white;
-}
-
-.portfolio__point:hover,
-.portfolio__point:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio__point:hover .portfolio__overlay,
-.portfolio__point:focus .portfolio__overlay {
-  transform: translateY(0%);
-  opacity: 1;
-}
-
-.portfolio__point:nth-last-child(3n + 1) {
-  margin-right: 0;
-}
-
-.portfolio__point:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .portfolio__title {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 36px / 18px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
 }
@@ -697,7 +666,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px / 16px;
+  line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -723,7 +692,6 @@ p {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -763,9 +731,7 @@ p {
   height: 11px;
   fill: black;
 }
-
-.modal__button:hover .modal__icon--close,
-.modal__button:focus .modal__icon--close {
+.modal__button:hover .modal__icon--close, .modal__button:focus .modal__icon--close {
   fill: #2196f3;
 }
 
@@ -794,7 +760,7 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px / 20px;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
@@ -804,7 +770,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 15px / 12px;
+  line-height: 1.25;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -822,12 +788,11 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px / 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   cursor: pointer;
 }
-
 .modal__input:hover {
   border: 1px solid #2196f3;
 }
@@ -849,7 +814,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px / 14px;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -895,13 +860,11 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 30px / 16px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: white;
 }
-
-.button__feedback:hover,
-.button__feedback:focus {
+.button__feedback:hover, .button__feedback:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #188ce8;
 }
@@ -917,5 +880,4 @@ p {
 
 .modal__field:hover .modal__icon {
   fill: #2196f3;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
