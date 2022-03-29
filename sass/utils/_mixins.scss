@@ -8,7 +8,7 @@
 }
 
 @function line-height($lh, $fsz) {
-  $line-height: (#{$lh} / #{$fsz});
+  $line-height: $lh / $fsz;
 
   @return $line-height;
 }
