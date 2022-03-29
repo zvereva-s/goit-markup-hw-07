@@ -1,0 +1,27 @@
+/* секция Особенности  */
+
+/* заголовки  */
+.features .point {
+  width: 270px;
+}
+.features__icon--box {
+  @include flex();
+
+  margin-bottom: 30px;
+  min-height: 120px;
+
+  background-color: $foneColor;
+}
+.features__icon {
+  display: flex;
+}
+.features__title {
+  margin-bottom: 10px;
+
+  text-align: left;
+
+  @include fonts($fw: bold);
+
+  text-transform: uppercase;
+  color: $dark;
+}

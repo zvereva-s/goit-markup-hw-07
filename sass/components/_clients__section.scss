@@ -1,0 +1,41 @@
+/* <!-- Постоянные клиенты --> */
+
+.clients__list {
+  display: flex;
+  justify-content: space-around;
+
+  width: 1170px;
+  /* row-gap: 30px; */
+}
+.clients__point:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  @include flex();
+
+  transition: border-color $timeDelay $cubic;
+
+  height: 92px;
+  width: 170px;
+
+  border: 1px solid $lightGrey;
+  border-radius: 4px;
+
+  color: $lightGrey;
+
+  &:hover,
+  &:focus {
+    border-color: $brandBlue;
+  }
+}
+
+.clients__icon {
+  fill: $lightGrey;
+  transition: fill $timeDelay $cubic;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $brandBlue;
+  }
+}

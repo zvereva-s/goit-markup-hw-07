@@ -1,0 +1,23 @@
+/* секция Чем мы занимаемся  */
+.wedoing__section {
+  padding-top: 0;
+}
+.wedoing__point {
+  position: relative;
+}
+.wedoing__thumb {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  padding: 27px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.wedoing__text-image {
+  @include fonts($fw: 700);
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: white;
+}

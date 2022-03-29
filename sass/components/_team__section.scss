@@ -1,0 +1,71 @@
+/* секция Наша Команда  */
+
+.team__section {
+  background-color: $foneColor;
+}
+.team__point {
+  background-color: white;
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__title--box {
+  text-align: center;
+
+  @include fonts($fw: 500, $fsz: 16px, $lh: 19px);
+
+  color: $dark;
+}
+.team__text {
+  margin-top: 10px;
+  text-align: center;
+
+  @include fonts($fsz: 16px, $lh: 19px);
+  color: $txt-color;
+}
+.team__box {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.team__list--sl {
+  margin-top: 16px;
+}
+.team__point--sl:not(:first-child) {
+  margin-left: 10px;
+}
+.team__icon-link {
+  @include flex();
+
+  transition: background-color $timeDelay $cubic;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $brandBlue;
+  }
+}
+
+.team__icon--sl {
+  fill: $lightGrey;
+
+  transition: fill $timeDelay $cubic;
+
+  &:focus,
+  &:hover {
+    fill: white;
+  }
+
+  .team__icon-link:hover &,
+  .team__icon-link:focus & {
+    fill: white;
+  }
+}
