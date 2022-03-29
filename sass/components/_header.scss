@@ -34,10 +34,10 @@
 }
 .header__point {
   @include fonts($fw: 500, $lh: 16px, $ls: 0.02em);
-  
+
   &:not(:last-child) {
-  margin-right: 30px;
-}
+    margin-right: 30px;
+  }
 }
 
 .header__link:focus,
@@ -53,9 +53,8 @@
 
   .header__link--icon:hover &,
   .header__link--icon:focus & {
-  fill: $brandBlue;
+    fill: $brandBlue;
   }
-
 }
 
 .header__link--icon {
@@ -65,7 +64,7 @@
 }
 .link--current {
   color: $brandBlue;
-    &::after {
+  &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -76,4 +75,5 @@
 
     background-color: $brandBlue;
     border-radius: 2px;
+  }
 }
