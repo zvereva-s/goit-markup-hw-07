@@ -1,12 +1,17 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 
-@import "./components/common";
-@import "./components/logo";
+@import "./base/common";
+
 @import "./components/header";
 @import "./components/footer";
+@import "./components/logo";
 
 @import "./components/hero";
-@import "./components/sections";
+@import "./components/features";
+@import "./components/wedoing__section";
+@import "./components/team__section";
+@import "./components/clients__section";
+
 @import "./components/portfolio";
 @import "./components/modal";
